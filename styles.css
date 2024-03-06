@@ -6,15 +6,6 @@ body {
     box-sizing: border-box;
 }
 
-section#home {
-    background-color: #f4f4f4;
-    background-image: url('viniciuscastrobr.github.io/wallpaper.jpg'); /* Ensure the URL is correct and accessible */
-    background-size: cover; /* Cover the entire section */
-    background-position: center; /* Center the background image */
-    min-height: 100vh; /* Optional: You might want to set a minimum height */
-}
-}
-
 img {
     border-radius: 50%;
     margin-top: 10px;
@@ -59,6 +50,10 @@ section {
 
 section#home {
     background-color: #f4f4f4;
+    background-image: url('viniciuscastrobr.github.io/wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
 }
 
 section#about, section#projects, section#contact {
@@ -94,9 +89,5 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-}
+@media (max-width: 768px)
+
