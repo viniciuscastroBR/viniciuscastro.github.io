@@ -4,6 +4,12 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+section#home {
+    background-image: url('wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
 
 header {
     background-color: #333;
@@ -40,12 +46,6 @@ section {
     margin: 20px 0;
 }
 
-section#home {
-    background-image: url('wallpaper.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-}
 
 section#about, section#publications, section#contact {
     background-color: #e9ecef;
