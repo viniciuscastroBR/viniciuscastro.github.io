@@ -8,10 +8,11 @@ body {
 
 section#home {
     background-color: #f4f4f4;
-    background-image: url('viniciuscastrobr.github.io/wallpaper.jpg'); /* Add your wallpaper image path here */
+    background-image: url('viniciuscastrobr.github.io/wallpaper.jpg'); /* Ensure the URL is correct and accessible */
     background-size: cover; /* Cover the entire section */
     background-position: center; /* Center the background image */
     min-height: 100vh; /* Optional: You might want to set a minimum height */
+}
 }
 
 img {
