@@ -70,6 +70,7 @@
       box-shadow: 0 4px 30px #3288e725;
       padding: 48px 32px 36px 32px;
       position: relative;
+      text-align: center;
     }
     .profile-pic {
       width: 128px;
@@ -87,38 +88,40 @@
       border-bottom: 2px solid #e1ecf7;
       padding-bottom: 6px;
       margin-top: 35px;
-      margin-bottom: 13px;
+      margin-bottom: 18px;
       font-weight: 600;
       letter-spacing: 0.2px;
+      text-align: center;
     }
-    .about, .research, .publications, .data, .contact {
-      margin-bottom: 25px;
+    .about {
+      margin-bottom: 20px;
     }
-    ul.pubs {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 22px 0;
-    }
-    ul.pubs li {
-      margin-bottom: 14px;
-      font-size: 1.09em;
+    .areas {
+      font-size: 1.08em;
+      background: #eaf6ff;
+      border-radius: 15px;
+      padding: 7px 15px;
+      display: inline-block;
+      margin: 16px 0 14px 0;
+      color: #3288e7;
+      font-weight: 500;
+      letter-spacing: 0.1em;
     }
     .links {
-      margin: 15px 0 0 0;
+      margin: 20px 0 0 0;
     }
     .links a {
       display: inline-block;
-      margin-right: 14px;
-      margin-bottom: 7px;
+      margin: 0 12px 10px 12px;
       text-decoration: none;
       color: #fff;
       background: #3288e7;
-      padding: 8px 17px;
+      padding: 8px 18px;
       border-radius: 22px;
       font-weight: 500;
       transition: background 0.18s;
       border: none;
-      font-size: 1.09em;
+      font-size: 1.11em;
       box-shadow: 0 2px 10px #3288e720;
     }
     .links a:hover {
@@ -127,17 +130,6 @@
     }
     .links a i {
       margin-right: 7px;
-    }
-    .areas {
-      font-size: 1.08em;
-      background: #eaf6ff;
-      border-radius: 15px;
-      padding: 7px 15px;
-      display: inline-block;
-      margin: 8px 0 0 0;
-      color: #3288e7;
-      font-weight: 500;
-      letter-spacing: 0.1em;
     }
     footer {
       text-align: center;
@@ -161,11 +153,10 @@
     <nav class="nav">
       <h1>Vinicius Silva Castro <span class="phd">PhD</span></h1>
       <div class="menu">
-        <a href="#about">Home</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#data">Data & Code</a>
-        <a href="#contact">Contact Me</a>
+        <a href="index.html">Home</a>
+        <a href="publications.html">Publications / Publicações</a>
+        <a href="opinion.html">Opinion / Opinião</a>
+        <a href="contact.html">Contact Me / Contato</a>
       </div>
     </nav>
   </header>
@@ -174,77 +165,19 @@
     <section class="about" id="about">
       <h2>About Me</h2>
       <p>
-        I am a Food Scientist with a degree from the Federal University of Mato Grosso (Brazil) and a Ph.D. in Food Science from the Federal University of Rio de Janeiro (Brazil), with expertise in Food Microbiology and Bioinformatics.<br>
+        I am a Food Scientist with a Ph.D. in Food Science (Federal University of Rio de Janeiro, Brazil) and a degree from the Federal University of Mato Grosso (Brazil), specializing in Food Microbiology and Bioinformatics.<br>
         Currently, I am starting a new research position at the University of Lethbridge (Canada), funded by Mitacs and BCRC.<br>
-        My objective is to understand and develop strategies to prevent biofilm formation by <i>Escherichia coli</i> in slaughterhouses.
-        <br><br>
+        My main goal is to understand and develop strategies to prevent biofilm formation by <i>Escherichia coli</i> in slaughterhouses.<br><br>
         I am passionate about open science, reproducibility, and collaborative projects in food safety and microbial genomics.
       </p>
       <div class="areas">
         <b>Areas:</b> Genomics • Food Microbiology • Data Science • Bioinformatics • Foodborne • Bacteria
       </div>
-    </section>
-    <section class="research" id="research">
-      <h2>Research</h2>
-      <p>
-        I work on the genomic characterization of bacterial isolates from food and environmental samples.<br>
-        My interests include:
-      </p>
-      <ul>
-        <li>Antimicrobial resistance and virulence gene detection</li>
-        <li>Pangenome analysis and phylogeny</li>
-        <li>Developing open-source pipelines and reproducible scripts for genomics</li>
-      </ul>
-    </section>
-    <section class="publications" id="publications">
-      <h2>Top 5 Publications</h2>
-      <ul class="pubs">
-        <li>
-          <b>1. Shiga‐toxin Producing Escherichia coli: Pathogenicity, Supershedding, Diagnostic Methods, Occurrence, and Foodborne Outbreaks</b><br>
-         VS Castro, RCT Carvalho, CA Conte‐Junior, EES Figueiredo, 2017. <i>Comprehensive Reviews in Food Science and Food Safety</i> [<a href="https://ift.onlinelibrary.wiley.com/doi/10.1111/1541-4337.12302" target="_blank">Access</a>]
-        </li>
-        <li>
-          <b>2. Phenolic compounds in bacterial inactivation: a perspective from Brazil</b><br>
-          AC Kauffmann, VS Castro, 2023. <i>Antibiotics</i> [<a href="https://www.mdpi.com/2079-6382/12/4/645#:~:text=Therefore%2C%20this%20study%20aimed%20to%20%28i%29%20evaluate%20the,of%20phenolic%20compounds%20that%20lead%20to%20antimicrobial%20action." target="_blank">Access</a>]
-        </li>
-        <li>
-          <b>3. Inconsistent PCR detection of Shiga toxin-producing Escherichia coli: Insights from whole genome sequence analyses</b><br>
-          VS Castro, et al. 2021. <i>Plos One</i> [<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0257168" target="_blank">Access</a>]
-        </li>
-         <li>
-          <b>4. The Trade-Off Between Sanitizer Resistance and Virulence Genes: Genomic Insights into E. coli Adaptation</b><br>
-          VS Castro, YD Porto, X Yang, CA Conte Junior, EES Figueiredo, K Stanford, 2025. <i>Antibiotics</i> [<a href="https://www.mdpi.com/2079-6382/14/3/291" target="_blank">Access</a>]
-        </li>
-           <li>
-          <b>5. Association of resistance to quaternary ammonium compounds and organic acids with genetic markers and their relationship to Escherichia coli serogroup</b><br>
-          VS Castro, Y Fang, X Yang, K Stanford 2023. <i>Food Microbiology</i> [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0740002023000540" target="_blank">Access</a>]
-        </li>
-      </ul>
-    </section>
-    <section class="data" id="data">
-      <h2>Data & Code</h2>
-      <p>
-        I share pipelines and scripts for:
-      </p>
-      <ul>
-        <li>Whole-genome assembly and annotation (Prokka, SPAdes)</li>
-        <li>Pangenome analysis (Roary)</li>
-        <li>Antimicrobial resistance screening (Abricate, ResFinder)</li>
-        <li>Visualization (R, Python)</li>
-      </ul>
-      <div class="links">
-        <a href="https://github.com/viniciuscastro"><i class="fab fa-github"></i>GitHub Profile</a>
-      </div>
-    </section>
-    <section class="contact" id="contact">
-      <h2>Contact Me</h2>
-      <p>
-        <b>Email:</b> viniciuscastro06@gmail.com
-      </p>
       <div class="links">
         <a href="https://www.linkedin.com/in/vinicius-silva-castro"><i class="fab fa-linkedin"></i>LinkedIn</a>
         <a href="https://www.researchgate.net/profile/Vinicius-Castro-8"><i class="fab fa-researchgate"></i>ResearchGate</a>
         <a href="https://scholar.google.com/citations?user=b-6dklwAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i>Google Scholar</a>
+        <a href="mailto:viniciuscastro06@gmail.com"><i class="fas fa-envelope"></i>Email</a>
       </div>
     </section>
   </main>
