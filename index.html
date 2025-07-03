@@ -35,6 +35,17 @@
       margin: 0 18px;
       letter-spacing: 1px;
     }
+    .phd {
+      font-size: 0.9em;
+      background: #32b7b7;
+      color: #fff;
+      padding: 2px 8px;
+      border-radius: 12px;
+      margin-left: 8px;
+      vertical-align: middle;
+      letter-spacing: 0.2em;
+      font-weight: 500;
+    }
     .menu {
       display: flex;
       gap: 18px;
@@ -128,6 +139,14 @@
       font-weight: 500;
       letter-spacing: 0.1em;
     }
+    footer {
+      text-align: center;
+      padding: 20px 0 15px 0;
+      font-size: 0.97em;
+      color: #888;
+      background: none;
+      margin-top: 25px;
+    }
     @media (max-width: 700px) {
       main { padding: 16px 4px; }
       .profile-pic { margin-top: -70px; width: 95px; height: 95px;}
@@ -140,7 +159,7 @@
 <body>
   <header>
     <nav class="nav">
-      <h1>Vinicius Silva Castro</h1>
+      <h1>Vinicius Silva Castro <span class="phd">PhD</span></h1>
       <div class="menu">
         <a href="#about">Home</a>
         <a href="#research">Research</a>
@@ -155,9 +174,9 @@
     <section class="about" id="about">
       <h2>About Me</h2>
       <p>
-       I am a Food Scientist with a degree from the Federal University of Mato Grosso (Brazil) and a Ph.D. in Food Science from the Federal University of Rio de Janeiro (Brazil), with expertise in Food Microbiology and Bioinformatics.<br>
+        I am a Food Scientist with a degree from the Federal University of Mato Grosso (Brazil) and a Ph.D. in Food Science from the Federal University of Rio de Janeiro (Brazil), with expertise in Food Microbiology and Bioinformatics.<br>
         Currently, I am starting a new research position at the University of Lethbridge (Canada), funded by Mitacs and BCRC.<br>
-        My objective is to understand and develop strategies to prevent biofilm formation by Escherichia coli in slaughterhouses.
+        My objective is to understand and develop strategies to prevent biofilm formation by <i>Escherichia coli</i> in slaughterhouses.
         <br><br>
         I am passionate about open science, reproducibility, and collaborative projects in food safety and microbial genomics.
       </p>
@@ -168,7 +187,7 @@
     <section class="research" id="research">
       <h2>Research</h2>
       <p>
-        I work on the genomic characterization of bacterial isolates from food and environmental samples. <br>
+        I work on the genomic characterization of bacterial isolates from food and environmental samples.<br>
         My interests include:
       </p>
       <ul>
@@ -198,7 +217,7 @@
         </li>
            <li>
           <b>5. Association of resistance to quaternary ammonium compounds and organic acids with genetic markers and their relationship to Escherichia coli serogroup</b><br>
-          VS Castro, Y Fang, X Yang, K Stanford 2023. <i>Food Microbioloy</i> [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0740002023000540" target="_blank">Access</a>]
+          VS Castro, Y Fang, X Yang, K Stanford 2023. <i>Food Microbiology</i> [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0740002023000540" target="_blank">Access</a>]
         </li>
       </ul>
     </section>
@@ -229,5 +248,8 @@
       </div>
     </section>
   </main>
+  <footer>
+    &copy; 2024 Vinicius Silva Castro. Last update: July 2024.
+  </footer>
 </body>
 </html>
