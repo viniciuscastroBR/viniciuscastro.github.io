@@ -6,69 +6,86 @@
   <title>PhD. Vinicius Silva Castro</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <style>
+    :root {
+      --primary: #313A43;
+      --accent: #96e0c7;
+      --neutral: #f8f9fa;
+      --white: #fff;
+      --text-main: #20242A;
+      --text-muted: #838d97;
+      --box-radius: 28px;
+      --shadow: 0 4px 32px #0001;
+      --avatar-border: #b8e4d9;
+      --link-hover: #2dc995;
+    }
     body {
-      background: linear-gradient(120deg, #f7fbff 0%, #eaf3fa 100%);
-      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--neutral);
+      font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
       margin: 0;
-      color: #1a2836;
+      color: var(--text-main);
     }
     header {
-      background: #192a44;
-      color: #fff;
-      padding: 24px 0 15px 0;
+      background: var(--white);
+      color: var(--primary);
+      box-shadow: 0 2px 16px #0001;
       position: sticky;
       top: 0;
-      z-index: 999;
-      box-shadow: 0 2px 8px #0001;
+      z-index: 100;
     }
     .nav {
-      max-width: 980px;
+      max-width: 880px;
       margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      flex-wrap: wrap;
+      padding: 26px 2vw 18px 2vw;
     }
     .nav h1 {
-      font-size: 2em;
+      font-size: 1.6em;
       font-weight: 700;
-      margin: 0 18px;
-      letter-spacing: 1px;
+      margin: 0;
+      letter-spacing: 0.3px;
+      display: flex;
+      align-items: center;
+      color: var(--primary);
     }
     .phd {
-      font-size: 0.9em;
-      background: #32b7b7;
-      color: #fff;
-      padding: 2px 8px;
-      border-radius: 12px;
-      margin-left: 8px;
+      font-size: 0.85em;
+      background: var(--accent);
+      color: var(--primary);
+      padding: 2.5px 10px;
+      border-radius: 10px;
+      margin-left: 10px;
       vertical-align: middle;
-      letter-spacing: 0.2em;
-      font-weight: 500;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      box-shadow: 0 2px 6px #0002;
     }
     .menu {
       display: flex;
-      gap: 18px;
+      gap: 2vw;
     }
     .menu a {
-      color: #c2e7ff;
+      color: var(--primary);
       text-decoration: none;
       font-size: 1.08em;
-      padding: 4px 12px;
-      border-radius: 7px;
-      transition: background 0.18s, color 0.18s;
+      padding: 7px 15px;
+      border-radius: 9px;
+      transition: background 0.16s, color 0.16s;
+      font-weight: 500;
+      letter-spacing: 0.02em;
     }
     .menu a:hover {
-      background: #3288e7;
-      color: #fff;
+      background: var(--accent);
+      color: var(--white);
     }
     main {
-      max-width: 760px;
-      margin: 50px auto 32px auto;
-      background: #fff;
-      border-radius: 22px;
-      box-shadow: 0 4px 30px #3288e725;
-      padding: 48px 32px 36px 32px;
+      max-width: 500px;
+      margin: 64px auto 36px auto;
+      background: var(--white);
+      border-radius: var(--box-radius);
+      box-shadow: var(--shadow);
+      padding: 52px 36px 44px 36px;
       position: relative;
       text-align: center;
     }
@@ -77,74 +94,96 @@
       height: 128px;
       object-fit: cover;
       border-radius: 50%;
-      border: 4px solid #3288e7;
-      box-shadow: 0 4px 16px #3288e730;
-      display: block;
-      margin: -105px auto 18px auto;
+      border: 4px solid var(--avatar-border);
+      box-shadow: 0 2px 18px #0001;
+      margin: -95px auto 22px auto;
       background: #eaf6ff;
+      display: block;
+      transition: filter 0.18s;
+    }
+    .profile-pic:hover {
+      filter: brightness(1.05) drop-shadow(0 0 16px #a1f7d4b0);
     }
     h2 {
-      color: #3288e7;
-      border-bottom: 2px solid #e1ecf7;
-      padding-bottom: 6px;
-      margin-top: 35px;
-      margin-bottom: 18px;
+      color: var(--primary);
       font-weight: 600;
+      margin: 32px 0 16px 0;
       letter-spacing: 0.2px;
-      text-align: center;
+      font-size: 1.22em;
+      border: none;
     }
     .about {
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
     .areas {
-      font-size: 1.08em;
-      background: #eaf6ff;
-      border-radius: 15px;
-      padding: 7px 15px;
+      font-size: 1.02em;
+      background: #e7f7f2;
+      border-radius: 12px;
+      padding: 7px 14px;
       display: inline-block;
-      margin: 16px 0 14px 0;
-      color: #3288e7;
+      margin: 18px 0 13px 0;
+      color: var(--primary);
       font-weight: 500;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.09em;
+      box-shadow: 0 1px 7px #b8e4d930;
+    }
+    .lang-switch {
+      color: var(--text-muted);
+      font-size: 1.01em;
+      margin: 22px 0 4px 0;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+    }
+    .bio-block {
+      text-align: left;
+      background: #f9fafb;
+      border-radius: 18px;
+      padding: 21px 18px 13px 18px;
+      margin: 18px 0 0 0;
+      font-size: 1.04em;
+      color: var(--text-main);
+      box-shadow: 0 1px 7px #b8e4d922;
+      line-height: 1.52;
+      font-weight: 400;
     }
     .links {
-      margin: 20px 0 0 0;
+      margin: 30px 0 0 0;
     }
     .links a {
       display: inline-block;
-      margin: 0 12px 10px 12px;
+      margin: 0 13px 13px 13px;
       text-decoration: none;
-      color: #fff;
-      background: #3288e7;
-      padding: 8px 18px;
-      border-radius: 22px;
+      color: var(--white);
+      background: var(--primary);
+      padding: 9px 22px;
+      border-radius: 19px;
       font-weight: 500;
-      transition: background 0.18s;
+      transition: background 0.18s, color 0.16s;
       border: none;
-      font-size: 1.11em;
-      box-shadow: 0 2px 10px #3288e720;
+      font-size: 1.1em;
+      box-shadow: 0 2px 12px #3288e720;
+      letter-spacing: 0.01em;
     }
     .links a:hover {
-      background: #192a44;
-      color: #eaf6ff;
+      background: var(--accent);
+      color: var(--primary);
     }
-    .links a i {
-      margin-right: 7px;
-    }
+    .links a i { margin-right: 7px; }
     footer {
       text-align: center;
       padding: 20px 0 15px 0;
-      font-size: 0.97em;
-      color: #888;
+      font-size: 0.99em;
+      color: #b0b8bf;
       background: none;
       margin-top: 25px;
+      letter-spacing: 0.04em;
     }
     @media (max-width: 700px) {
-      main { padding: 16px 4px; }
-      .profile-pic { margin-top: -70px; width: 95px; height: 95px;}
-      .nav { flex-direction: column; }
+      main { padding: 16px 6px; }
+      .profile-pic { margin-top: -55px; width: 96px; height: 96px;}
+      .nav { flex-direction: column; padding: 19px 2vw 13px 2vw; }
       .menu { margin-top: 11px; }
-      .nav h1 { margin-bottom: 9px; }
+      .nav h1 { margin-bottom: 9px; font-size: 1.1em; }
     }
   </style>
 </head>
@@ -162,30 +201,29 @@
   </header>
   <main>
     <img src="https://raw.githubusercontent.com/viniciuscastroBR/viniciuscastroBR.github.io/main/profile_photo" alt="Vinicius Silva Castro" class="profile-pic">
-    <section class="about" id="about">
-      <h2>About Me</h2>
-      <p>
-        I am a Food Scientist with a Ph.D. in Food Science (Federal University of Rio de Janeiro, Brazil) and a degree from the Federal University of Mato Grosso (Brazil), specializing in Food Microbiology and Bioinformatics.<br>
-        Currently, I am starting a new research position at the University of Lethbridge (Canada), funded by Mitacs and BCRC.<br>
-        My main goal is to understand and develop strategies to prevent biofilm formation by <i>Escherichia coli</i> in slaughterhouses.<br><br>
-        I am passionate about open science, reproducibility, and collaborative projects in food safety and microbial genomics.
-      </p>
-      <p>
-  Sou cientista de alimentos, com doutorado em Ciência de Alimentos pela Universidade Federal do Rio de Janeiro (UFRJ) e graduação pela Universidade Federal de Mato Grosso (UFMT), com especialização em Microbiologia de Alimentos e Bioinformática.<br>
-  Atualmente, inicio uma nova posição de pesquisa na University of Lethbridge (Canadá), financiada por Mitacs e BCRC.<br>
-  Meu principal objetivo é entender e desenvolver estratégias para prevenir a formação de biofilmes por <i>Escherichia coli</i> em frigoríficos.<br><br>
-  Sou apaixonado por ciência aberta, reprodutibilidade e projetos colaborativos em segurança dos alimentos e genômica microbiana.
-</p>
-      <div class="areas">
-        <b>Areas:</b> Genomics • Food Microbiology • Data Science • Bioinformatics • Foodborne • Bacteria
-      </div>
-      <div class="links">
-        <a href="https://www.linkedin.com/in/vinicius-silva-castro"><i class="fab fa-linkedin"></i>LinkedIn</a>
-        <a href="https://www.researchgate.net/profile/Vinicius-Castro-8"><i class="fab fa-researchgate"></i>ResearchGate</a>
-        <a href="https://scholar.google.com/citations?user=b-6dklwAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i>Google Scholar</a>
-        <a href="mailto:viniciuscastro06@gmail.com"><i class="fas fa-envelope"></i>Email</a>
-      </div>
-    </section>
+    <h2>About Me</h2>
+    <div class="lang-switch">English / Português</div>
+    <div class="bio-block">
+      <b>EN:</b><br>
+      I am a Food Scientist with a Ph.D. in Food Science (Federal University of Rio de Janeiro, Brazil) and a degree from the Federal University of Mato Grosso (Brazil), specializing in Food Microbiology and Bioinformatics.<br>
+      Currently, I am starting a new research position at the University of Lethbridge (Canada), funded by Mitacs and BCRC.<br>
+      My main goal is to understand and develop strategies to prevent biofilm formation by <i>Escherichia coli</i> in slaughterhouses.<br><br>
+      I am passionate about open science, reproducibility, and collaborative projects in food safety and microbial genomics.<br><br>
+      <b>PT:</b><br>
+      Sou cientista de alimentos, com doutorado em Ciência de Alimentos pela Universidade Federal do Rio de Janeiro (UFRJ) e graduação pela Universidade Federal de Mato Grosso (UFMT), com especialização em Microbiologia de Alimentos e Bioinformática.<br>
+      Atualmente, inicio uma nova posição de pesquisa na University of Lethbridge (Canadá), financiada por Mitacs e BCRC.<br>
+      Meu principal objetivo é entender e desenvolver estratégias para prevenir a formação de biofilmes por <i>Escherichia coli</i> em frigoríficos.<br><br>
+      Sou apaixonado por ciência aberta, reprodutibilidade e projetos colaborativos em segurança dos alimentos e genômica microbiana.
+    </div>
+    <div class="areas">
+      <b>Areas:</b> Genomics • Food Microbiology • Data Science • Bioinformatics • Foodborne • Bacteria
+    </div>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/vinicius-silva-castro"><i class="fab fa-linkedin"></i>LinkedIn</a>
+      <a href="https://www.researchgate.net/profile/Vinicius-Castro-8"><i class="fab fa-researchgate"></i>ResearchGate</a>
+      <a href="https://scholar.google.com/citations?user=b-6dklwAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i>Google Scholar</a>
+      <a href="mailto:viniciuscastro06@gmail.com"><i class="fas fa-envelope"></i>Email</a>
+    </div>
   </main>
   <footer>
     &copy; 2024 Vinicius Silva Castro. Last update: July 2024.
